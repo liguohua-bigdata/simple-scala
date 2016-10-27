@@ -77,25 +77,39 @@ prependAll()方法的原型如下：
 ```
 
 追加Array: prependAll()方法可以追加一个Array
+执行代码
 ```scala
-scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
-arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr.appendAll(Array("jack","lily","mark"))
+arrbr
+```
+执行效果：
+```scala
+scala> val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua)
 
 scala> arrbr.appendAll(Array("jack","lily","mark"))
 
 scala> arrbr
-res23: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua, jack, lily, mark)
+res1: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua, jack, lily, mark)
 ```
 
 追加List: prependAll()方法可以追加一个List
+执行代码
 ```scala
-scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
-arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr.appendAll(List("jack","lily","mark"))
+arrbr
+```
+执行效果：
+```scala
+scala> val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua)
 
 scala> arrbr.appendAll(List("jack","lily","mark"))
 
 scala> arrbr
-res25: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua, jack, lily, mark)
+res5: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua, jack, lily, mark)
 ```
 
 
