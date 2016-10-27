@@ -94,7 +94,7 @@ scala> arrbr
 res1: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua, jack, lily, mark)
 ```
 
-追加List: prependAll()方法可以追加一个List
+追加List: prependAll()方法可以追加一个List  
 执行代码
 ```scala
 val arrbr=ArrayBuffer[String]("ming","hua")
