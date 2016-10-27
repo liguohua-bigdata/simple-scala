@@ -113,7 +113,14 @@ res5: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(ming, hua, jack
 ```
 
 
-追加Set: prependAll()方法可以追加一个Set
+追加Set: prependAll()方法可以追加一个Set  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr.appendAll(Set("jack","lily","mark"))
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -125,7 +132,14 @@ res27: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xia
 ```
 
 
-异常1： prependAll()方法把能用于追加单个元素
+异常1： prependAll()方法把能用于追加单个元素  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr.appendAll"jack")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -136,7 +150,13 @@ arrbr.appendAll"jack")
 ```
 
 
-异常1： prependAll()方法把能用于追加多个元素
+异常2： prependAll()方法把能用于追加多个元素  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr.appendAll(("jack","lily","mark"))
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -150,7 +170,14 @@ scala> arrbr.appendAll(("jack","lily","mark"))
 ```
 
 
-追加Array：'++='可以追加一个Array
+追加Array：'++='可以追加一个Array  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr++=Array("jack","lily","mark")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -162,7 +189,14 @@ scala> arrbr
 res32: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua, jack, lily, mark)
 ```
 
-追加List：'++='可以追加一个List
+追加List：'++='可以追加一个List  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr++=List("jack","lily","mark")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -174,7 +208,14 @@ scala> arrbr
 res34: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua, jack, lily, mark)
 ```
 
-追加Set：'++='可以追加一个Set
+追加Set：'++='可以追加一个Set  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr++=Set("jack","lily","mark")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -186,7 +227,13 @@ scala> arrbr
 res36: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua, jack, lily, mark)
 ```
 
-异常1：'++='不能追加单个元素
+异常1：'++='不能追加单个元素  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr++="jack"
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -199,7 +246,13 @@ scala> arrbr++="jack"
                ^
 ```
 
-异常2：'++='不能追加多个元素
+异常2：'++='不能追加多个元素  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("ming","hua")
+arrbr++=("jack","lily","mark")
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
