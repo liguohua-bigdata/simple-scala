@@ -270,7 +270,14 @@ insert()方法的原型如下：
   def insert(n: Int, elems: A*) { insertAll(n, elems) }
 ```
 
-在指定位置处插入一个元素
+在指定位置处插入一个元素  
+执行代码
+```scala
+val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
+arrbr.insert(1,"xiao wang")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
@@ -281,7 +288,14 @@ scala> arrbr
 res2: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao wang, xiao hua)
 ```
 
-在指定位置处插入多个元素
+在指定位置处插入多个元素  
+执行代码
+```scala
+al arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
+arrbr.insert(1,"xiao wang","xiao zhang","xiao li")
+arrbr
+```
+执行效果：
 ```scala
 scala> val arrbr=ArrayBuffer[String]("xiao ming","xiao hua")
 arrbr: scala.collection.mutable.ArrayBuffer[String] = ArrayBuffer(xiao ming, xiao hua)
